@@ -1,3 +1,5 @@
+// This is a long way of creating a run function. 
+
 package dev.bucsa.run_tracker.run;
 
 import java.time.LocalDateTime;
@@ -7,7 +9,7 @@ import javax.xml.stream.Location;
 import ch.qos.logback.core.util.Duration;
 import java.util.Objects;
 
-public class Run {
+public class Run_OldMethod {
     private Integer id;
     private String title; 
     private LocalDateTime startedOn; 
@@ -15,7 +17,7 @@ public class Run {
     private Integer miles; 
     private Location location;
 
-    public Run(Integer id, String title, LocalDateTime startedOn, LocalDateTime completedOn, Integer miles, Location location){
+    public Run_OldMethod(Integer id, String title, LocalDateTime startedOn, LocalDateTime completedOn, Integer miles, Location location){
         this.id = id;
         this. title = title;
         this.startedOn = startedOn;
@@ -83,7 +85,7 @@ public class Run {
     public boolean  equals(Object o){
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return  false;
-        Run run = (Run) o;
+        Run_OldMethod run = (Run_OldMethod) o;
         return Objects.equals(id, run.id) && Objects.equals(title, run.title) && Objects.equals0(startedOn, run.startedOn) && Objects.equals(completedOn, run.completedOn);
     }
 
