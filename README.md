@@ -18,6 +18,12 @@ This project uses:
 
 Any classes, objects, etc. placed in the ```run_tracker/src/main/java``` will serve as default files when using in any other files and thus any files using the default materials will not required ```package``` statement in the headers of the file.  
 
+### Package By Feature
+
+In this project we will be using the "Package by feature" method of development. This means that if we have a feature like ```run```, we will be putting the Controller, Model, and Service files for the ```run``` feature all within the ```run``` package (file, dictory). So if we create a feature for ```user```, the Controller, Model, and Service file will be placed within the ```user``` package (file, dictory).
+
+The other method would be to place all files related to Controllers, Model, and Service within their respective package (file, dictory).
+
 ## Maven Commands
 
 ```./mvnw spring-boot:run``` : Type this into the internal when the dictory is at run_tracker level and Maven will begin to run on the PORT currently connected to it.  
