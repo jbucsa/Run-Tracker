@@ -32,6 +32,10 @@ The other method would be to place all files related to Controllers, Model, and 
 ## What's a bean?
 A ```bean``` is nothing more than a instances of a class with some metadata around it. When you hear bean, think this is an instance of a class that the spring container (the huge application context is container objects) is managing for me. 
 
+## What is a EMUN
+
+An ```emun``` only allows for a specfic set of values to be responses when a object is called. For example, if we have a ```enum``` for ```location``` and the only possible values that ```enum``` are ```INSIDE``` or ```OUTSIDE```, calling ```location``` will over send an answer of ```INSIDE``` or ```OUTSIDE```.
+
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url-Bucsa]: https://www.linkedin.com/in/justin-bucsa
