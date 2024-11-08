@@ -49,7 +49,7 @@ public class ApplicationPart2 {
 	}
 
     @Bean
-    CommandLineRunner runner() {
+    CommandLineRunner runner_Archive() {
         return args -> {
             Run run = new Run(1, "First Run", LocalDateTime.now(), LocalDateTime.now().plus(1, ChronoUnit.HOURS), 3, Location.OUTDOOR);
             log.info("Run: " + run);
