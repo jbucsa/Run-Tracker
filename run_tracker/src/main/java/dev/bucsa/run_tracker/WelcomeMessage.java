@@ -1,6 +1,5 @@
 package dev.bucsa.run_tracker;
 
-
 import org.springframework.stereotype.Component;
 
 @Component
