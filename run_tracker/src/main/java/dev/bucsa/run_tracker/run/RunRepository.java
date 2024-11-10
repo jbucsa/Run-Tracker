@@ -1,5 +1,6 @@
 package dev.bucsa.run_tracker.run;
 
+
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
@@ -20,5 +21,13 @@ public class RunRepository {
         runs.add(new Run(1, "First Run", LocalDateTime.now(), LocalDateTime.now().plus(1, ChronoUnit.HOURS), 3, Location.OUTDOOR));
     
         runs.add(new Run(2, "Second Run", LocalDateTime.now(), LocalDateTime.now().plus(45, ChronoUnit.MINUTES), 2, Location.INDOOR)); 
+    }
+
+    public List<Run> getRuns() {
+        return runs;
+    }
+
+    public void setRuns(List<Run> runs) {
+        this.runs = runs;
     }
 }
